@@ -56,7 +56,9 @@ Create overrides per the examples below and run the script:
 
 `cis-1.20_overrides/master.yaml`
 
-Bracketed info is for reporting purposes to easily identify the override/
+Parent level objec should be `overrides` and each override should be a list item with the following fields:
+
+Bracketed info is for reporting purposes to easily identify the override.
 
 ```yaml
 ---
@@ -103,7 +105,7 @@ overrides:
 
 Your directory should look like this by default to use the helper script.
 
-[image](./images/dir.png)
+![Alt text](./images/dir.png?raw=true "Directory Structure")
 
 *Override Example*
 
@@ -113,7 +115,7 @@ Update the test pass/fail criteris as needed. Add annotations to the text for ea
 ./kube-bench/cis-1.20_overrides/master.yaml
 ```
 
-[image](./images/override.png)
+![Alt text](./images/override.png?raw=true "Override Example")
 
 *Updated `cfg` File*
 
@@ -123,10 +125,10 @@ The script will modify the upstream test file with your override.
 ./kube-bench/cfg/cis-1.20/master.yaml
 ```
 
-[image](./images/cis.png)
+![Alt text](./images/cis.png?raw=true "Updated `cfg` File")
 
 *Test Result*
 
 Test result should pass (or fail) based on your override.
 
-[image](./images/run.png)
+![Alt text](./images/run.png?raw=true "Test result")
